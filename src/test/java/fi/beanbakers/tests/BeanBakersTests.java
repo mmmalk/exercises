@@ -12,7 +12,7 @@ import org.junit.Test;
  * 
  * @author Peter
  */
-public class BeanBakerTests {
+public class BeanBakersTests {
 
 	@Test
 	public void testReverseList() {
@@ -37,9 +37,9 @@ public class BeanBakerTests {
 
 	@Test
 	public void testFibonacciSequence() {
-		int seriesLength = 8;
+		int sequenceLength = 8;
 		int[] expectedResult = { 1, 1, 2, 3, 5, 8, 13, 21 };
-		int[] result = doFibonacciSequence(seriesLength);
+		int[] result = doFibonacciSequence(sequenceLength);
 		Assert.assertArrayEquals(expectedResult, result);
 	}
 
@@ -47,10 +47,10 @@ public class BeanBakerTests {
 	 * Write your method here that returns the fibonacci sequence up to the provided
 	 * sequence length.
 	 * 
-	 * @param seriesLength the amount of fibonacci sequence items to calculate
+	 * @param sequenceLength the amount of fibonacci sequence items to calculate
 	 * @return int array containing the calculated fibonacci sequence
 	 */
-	private int[] doFibonacciSequence(int seriesLength) {
+	private int[] doFibonacciSequence(int sequenceLength) {
 		// TODO: Write code!
 		return new int[0];
 	}
