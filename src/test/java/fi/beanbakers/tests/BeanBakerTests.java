@@ -15,7 +15,7 @@ import org.junit.Test;
 public class BeanBakerTests {
 
 	@Test
-	public void reverseListTest() {
+	public void testReverseList() {
 		List<String> input = Arrays.asList("a", "b", "c", "d", "e", "f", "g");
 		List<String> expectedResult = Arrays.asList("g", "f", "e", "d", "c", "b", "a");
 
@@ -36,7 +36,7 @@ public class BeanBakerTests {
 	}
 
 	@Test
-	public void fibonacciSequenceTest() {
+	public void testFibonacciSequence() {
 		int seriesLength = 8;
 		int[] expectedResult = { 1, 1, 2, 3, 5, 8, 13, 21 };
 		int[] result = doFibonacciSequence(seriesLength);
@@ -56,7 +56,7 @@ public class BeanBakerTests {
 	}
 
 	@Test
-	public void ascendingSeriesTest() {
+	public void testAscendingAndDescendingSeries() {
 		List<Integer> testSeriesA = Arrays.asList(1, 2, 5, 8, 15, 27, 31, 50);
 		List<Integer> testSeriesB = Arrays.asList(1, 2, 1, 8, 7, 27, 31, 50);
 
