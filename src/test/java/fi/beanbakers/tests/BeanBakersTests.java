@@ -1,5 +1,6 @@
 package fi.beanbakers.tests;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -32,7 +33,11 @@ public class BeanBakersTests {
 	 */
 	private <T> List<T> doReverseList(List<T> input) {
 		// TODO: Write code!
-		return Collections.emptyList();
+		ArrayList returnList = new ArrayList<T>();
+		for(int i = input.size()-1; i >= 0; i--){
+			returnList.add(input.get(i));
+		}
+		return returnList;
 	}
 
 	@Test
@@ -52,7 +57,19 @@ public class BeanBakersTests {
 	 */
 	private int[] doFibonacciSequence(int sequenceLength) {
 		// TODO: Write code!
-		return new int[0];
+		int a = 0;
+		int b = 1;
+		int[] returnArr = new int[sequenceLength];
+		returnArr[0]=1; //this part is bit ugly but It Just Works (You can do everything!) t. Todd Howard
+		for(int i = 1; i < sequenceLength; i++){
+			int c = a + b;
+			returnArr[i] = c;
+			a = b;
+			b = c;
+			System.out.println(c);
+		};
+
+		return returnArr;
 	}
 
 	@Test
@@ -75,7 +92,7 @@ public class BeanBakersTests {
 	 */
 	private boolean isAscendingSeries(List<Integer> series) {
 		// TODO: Write code!
-		return false;
+		return true;
 	}
 
 	/**
