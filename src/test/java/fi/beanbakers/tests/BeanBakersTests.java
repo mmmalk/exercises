@@ -92,6 +92,14 @@ public class BeanBakersTests {
 	 */
 	private boolean isAscendingSeries(List<Integer> series) {
 		// TODO: Write code!
+		Integer lastVal = series.get(0);
+		for(int i = 1; i < series.size(); i++){
+			Integer currentVal = series.get(i);
+			if(currentVal.compareTo(lastVal) < 0){
+				return false;
+			}
+			lastVal = currentVal;
+		}
 		return true;
 	}
 
@@ -104,6 +112,14 @@ public class BeanBakersTests {
 	 */
 	private boolean isDescendingSeries(List<Integer> series) {
 		// TODO: Write code!
-		return false;
+		int lastVal = series.get(0);
+		for(int i = 1; i < series.size(); i++){
+			int currentVal = series.get(i);
+			if(lastVal < currentVal) {
+				return false;
+			}
+			lastVal = currentVal;
+		}
+		return true;
 	}
 }
